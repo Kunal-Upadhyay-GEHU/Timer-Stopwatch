@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'PocketCalculator';
+    src: url('./pocket-calculator-font/PocketCalculator-qjd.ttf');
+}
+
+body {
+    background-color: #000;
+    color: #00ffcc;
+    font-family: "Arial", sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#stopwatch, #timer {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+#timer{
+    display:none;
+}
+
+
+#stopwatchDisplay, #timerDisplay {
+    font-family: 'PocketCalculator';
+    font-size: 36px;
+}
+
+
+button {
+    background-color: #00ffcc;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #009999;
+}
+
+/* Style the input field */
+input {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #00ffcc;
+    border: 1px solid #00ffcc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Style the toggle buttons */
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#toggleStopwatch, #toggleTimer {
+    background-color: #009999;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+#toggleStopwatch:hover, #toggleTimer:hover {
+    background-color: #00ffcc;
+}
